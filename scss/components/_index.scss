@@ -3,7 +3,21 @@
 // used to import individual components
 // **************************************
 
-// import the grid component
+// import grid components
 @import 'grid';
 
 // NOTE: import other components here:
+// import buttons components
+@import 'buttons';
+
+// import typography components
+@import 'typography';
+
+// import forms components
+@import 'forms';
+
+// import images components
+@import 'images';
+
+//import navigation components
+@import 'navigation'

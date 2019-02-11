@@ -1,0 +1,28 @@
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.nav__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.nav__item a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35vw;
+  padding-right: 35vw;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  transition: background-color .5s;
+}
+
+.nav__item a:hover {
+  background-color: aquamarine;
+  color: white;
+  border-radius: 10px;
+}

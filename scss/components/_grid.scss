@@ -6,6 +6,12 @@
 // but additional styling may be needed
 // **********************************************
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 // grid base class
 .grid {
@@ -15,6 +21,8 @@
     padding: 1em 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-self: center;
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
@@ -33,11 +41,16 @@
       // selector would be .grid__col--1
       &--#{$i} {
 
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
+        align-self: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
@@ -51,6 +64,56 @@
       }
     }
   }
+}
+//Grid system theme colors
+
+.grid__col--12.theme__colors {
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--6.theme__colors {
+  background-color: #00bfff;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--4.theme__colors {
+  background-color: #add8e6;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--3.theme__colors {
+  background-color: lavender;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--5.theme__colors {
+  background-color: green;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--7.theme__colors {
+  background-color: red;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid__col--8.theme__colors {
+  background-color: orange;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 // targets all elements with classes that begin with grid__col
