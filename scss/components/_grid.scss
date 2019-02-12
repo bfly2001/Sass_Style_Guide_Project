@@ -11,6 +11,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media (min-width: 481px) {
+  font-size: x-large;
+  }
 }
 
 // grid base class
@@ -60,10 +63,20 @@
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100} + "%";
+          @media (min-width: 481px) {
+            flex-wrap: nowrap;
+          }
         }
       }
     }
   }
+}
+
+.centered {
+@media (min-width: 481px) {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
 }
 //Grid system theme colors
 

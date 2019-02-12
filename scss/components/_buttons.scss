@@ -11,6 +11,9 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: 481px) {
+    margin-left: 25px;
+  }
 }
 
 .btn--success.theme__colors {
@@ -25,6 +28,10 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: 481px) {
+    margin-left: 50px;
+    margin-right: 25px;
+  }
 }
 
 .btn--error.theme__colors {
@@ -39,6 +46,10 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: 481px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .btn--warning.theme__colors {
@@ -53,6 +64,10 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: 481px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 .btn--info.theme__colors {
@@ -67,4 +82,8 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: 481px) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }

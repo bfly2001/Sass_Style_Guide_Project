@@ -1,4 +1,10 @@
 
+.img--logo {
+  @media (min-width: 481px) {
+    margin-right: 35vw;
+  }
+}
+
 .img--avatar {
   width: 50%;
   margin-right: auto;

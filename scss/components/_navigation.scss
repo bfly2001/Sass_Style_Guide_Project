@@ -2,6 +2,9 @@
 ul {
   list-style-type: none;
   padding-left: 0px;
+  @media (min-width: 481px) {
+    display: flex;
+  }
 }
 
 .nav__item {
@@ -19,6 +22,10 @@ ul {
   background-color: white;
   color: black;
   transition: background-color .5s;
+  @media (min-width: 481px) {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
 }
 
 .nav__item a:hover {
