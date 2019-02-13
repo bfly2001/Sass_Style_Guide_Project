@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @media (min-width: $desktop-brk) {
+  @media (min-width: 768px) {
   font-size: x-large;
   }
 }
@@ -28,8 +28,9 @@
     align-self: center;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @media (min-width: $desktop-brk) {
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -70,6 +71,60 @@
       }
     }
   }
+}
+
+.grid__col--3 {
+@media (min-width: $desktop-brk) {
+  justify-content: flex-start;
+  flex-basis: 23vw;
+  flex-grow: 1;
+  }
+}
+
+.grid__col--4 {
+@media (min-width: $desktop-brk) {
+  flex-basis: 31vw;
+  flex-grow: 1;
+  }
+}
+
+.grid__col--5 {
+@media (min-width: $desktop-brk) {
+  flex-basis: 31vw;
+  flex-grow: 1;
+  }
+}
+
+.grid__col--6 {
+@media (min-width: $desktop-brk) {
+  flex-basis: 47vw;
+  flex-grow: 1;
+  }
+}
+
+.grid__col--7 {
+@media (min-width: $desktop-brk) {
+  flex-basis: 55vw;
+  flex-grow: 2;
+  }
+}
+
+.grid__col--8 {
+  @media (min-width: $desktop-brk) {
+    flex-basis: 60vw;
+  }
+}
+
+.grid__col--9 {
+@media (min-width: $desktop-brk) {
+  justify-content: flex-end;
+  flex-basis: 60vw;
+  }
+}
+
+.grid__col--12 {
+  width: 100vw;
+  flex-grow: 1;
 }
 
 .centered {

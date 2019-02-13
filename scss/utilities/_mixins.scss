@@ -9,12 +9,15 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+  @media (min-width: $desktop-brk) {
+    width: 15vw;
+  }
 }
 
 @mixin button-mrgn {
   @media (min-width: $desktop-brk) {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 

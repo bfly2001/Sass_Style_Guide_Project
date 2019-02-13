@@ -3,7 +3,8 @@
   background-color: #bfefff;
   @include button;
   @media (min-width: $desktop-brk) {
-    margin-left: 25px;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 
@@ -11,8 +12,8 @@
   background-color: green;
   @include button;
   @media (min-width: $desktop-brk) {
-    margin-left: 50px;
-    margin-right: 25px;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 
