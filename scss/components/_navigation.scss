@@ -2,34 +2,32 @@
 ul {
   list-style-type: none;
   padding-left: 0px;
-  @media (min-width: 481px) {
+  @media (min-width: $desktop-brk) {
     display: flex;
   }
 }
 
 .nav__item {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include nav-pad;
   text-align: center;
 }
 
 .nav__item a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include nav-pad;
   padding-left: 35vw;
   padding-right: 35vw;
   text-decoration: none;
   background-color: white;
   color: black;
   transition: background-color .5s;
-  @media (min-width: 481px) {
+  @media (min-width: $desktop-brk) {
     padding-left: 1vw;
     padding-right: 1vw;
   }
 }
 
 .nav__item a:hover {
-  background-color: aquamarine;
+  background-color: $hover-color;
   color: white;
   border-radius: 10px;
 }

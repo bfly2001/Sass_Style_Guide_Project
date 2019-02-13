@@ -1,14 +1,13 @@
 
 .img--logo {
-  @media (min-width: 481px) {
+  @media (min-width: $desktop-brk) {
     margin-right: 35vw;
   }
 }
 
 .img--avatar {
   width: 50%;
-  margin-right: auto;
-  margin-left: auto;
+  @include center;
   margin-top: 25px;
 }
 
@@ -16,6 +15,5 @@
   width: 80%;
   padding: 15px;
   border: 1px black solid;
-  margin-right: auto;
-  margin-left: auto;
+  @include center;
 }

@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @media (min-width: 481px) {
+  @media (min-width: $desktop-brk) {
   font-size: x-large;
   }
 }
@@ -63,7 +63,7 @@
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100} + "%";
-          @media (min-width: 481px) {
+          @media (min-width: $desktop-brk) {
             flex-wrap: nowrap;
           }
         }
@@ -73,7 +73,7 @@
 }
 
 .centered {
-@media (min-width: 481px) {
+@media (min-width: $desktop-brk) {
   margin-left: 15vw;
   margin-right: 15vw;
 }
@@ -81,52 +81,38 @@
 //Grid system theme colors
 
 .grid__col--12.theme__colors {
-  background-color: aquamarine;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: $hover-color;
+  @include grid-spc;
 }
 
 .grid__col--6.theme__colors {
   background-color: #00bfff;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 .grid__col--4.theme__colors {
   background-color: #add8e6;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 .grid__col--3.theme__colors {
   background-color: lavender;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 .grid__col--5.theme__colors {
   background-color: green;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 .grid__col--7.theme__colors {
   background-color: red;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 .grid__col--8.theme__colors {
   background-color: orange;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  @include grid-spc;
 }
 
 // targets all elements with classes that begin with grid__col

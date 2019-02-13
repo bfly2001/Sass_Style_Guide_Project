@@ -1,0 +1,35 @@
+@mixin button {
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@mixin button-mrgn {
+  @media (min-width: $desktop-brk) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@mixin center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin grid-spc {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@mixin nav-pad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

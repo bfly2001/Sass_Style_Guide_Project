@@ -1,34 +1,16 @@
 //button theme colors
 .btn--default.theme__colors {
   background-color: #bfefff;
-  color: white;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 0px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  @media (min-width: 481px) {
+  @include button;
+  @media (min-width: $desktop-brk) {
     margin-left: 25px;
   }
 }
 
 .btn--success.theme__colors {
   background-color: green;
-  color: white;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 0px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  @media (min-width: 481px) {
+  @include button;
+  @media (min-width: $desktop-brk) {
     margin-left: 50px;
     margin-right: 25px;
   }
@@ -36,54 +18,18 @@
 
 .btn--error.theme__colors {
   background-color: red;
-  color: white;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 0px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  @media (min-width: 481px) {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
+  @include button;
+  @include button-mrgn;
 }
 
 .btn--warning.theme__colors {
   background-color: orange;
-  color: white;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 0px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  @media (min-width: 481px) {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
+  @include button;
+  @include button-mrgn;
 }
 
 .btn--info.theme__colors {
   background-color: purple;
-  color: white;
-  width: 100%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 0px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  @media (min-width: 481px) {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
+  @include button;
+  @include button-mrgn;
 }
