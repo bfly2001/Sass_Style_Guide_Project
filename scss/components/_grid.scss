@@ -11,6 +11,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-family: $font-stack;
   @media (min-width: 768px) {
   font-size: x-large;
   }
@@ -21,7 +24,8 @@
 
   // .grid__row
   &__row {
-    padding: 1em 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -30,7 +34,6 @@
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: $desktop-brk) {
       flex-direction: row;
-      flex-wrap: wrap;
     }
   }
 
@@ -51,6 +54,7 @@
         margin-top: 10px;
         flex-basis: 100%;
         align-self: center;
+        border-radius: 5px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -74,44 +78,105 @@
 }
 
 .grid__col--3 {
+  //background-color: lavender;
+  @include grid-spc;
 @media (min-width: $desktop-brk) {
-  justify-content: flex-start;
   flex-basis: 23vw;
   flex-grow: 1;
+  }
+
+  &.theme__colors {
+    background-color: #CC99CC;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
   }
 }
 
 .grid__col--4 {
+  //background-color: #add8e6;
+  @include grid-spc;
 @media (min-width: $desktop-brk) {
   flex-basis: 31vw;
   flex-grow: 1;
+  align-self: flex-start;
+  }
+
+  &.theme__colors {
+    background-color: #66CCFF;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
   }
 }
 
 .grid__col--5 {
+  //background-color: green;
+  @include grid-spc;
 @media (min-width: $desktop-brk) {
   flex-basis: 31vw;
   flex-grow: 1;
   }
+
+  &.theme__colors {
+    background-color: #66CC99;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
+  }
+
 }
 
 .grid__col--6 {
-@media (min-width: $desktop-brk) {
+  //background-color: #00bfff;
+  @include grid-spc;@media (min-width: $desktop-brk) {
   flex-basis: 47vw;
   flex-grow: 1;
   }
+
+  &.theme__colors {
+    background-color: #3399CC;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
+  }
+
 }
 
 .grid__col--7 {
+  //background-color: red;
+  @include grid-spc;
 @media (min-width: $desktop-brk) {
   flex-basis: 55vw;
   flex-grow: 2;
   }
+
+  &.theme__colors {
+    background-color: #FF9999;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
+  }
 }
 
 .grid__col--8 {
+  //background-color: orange;
+  @include grid-spc;
   @media (min-width: $desktop-brk) {
     flex-basis: 60vw;
+  }
+
+  &.theme__colors {
+    background-color: #FF9966;
+    justify-content: flex-start;
+    @media (min-width: $desktop-brk) {
+      justify-content: center;
+    }
   }
 }
 
@@ -123,51 +188,24 @@
 }
 
 .grid__col--12 {
-  width: 100vw;
+  width: 100%;
   flex-grow: 1;
+  //background-color: $hover-color;
+  @include grid-spc;
+
+&.theme__colors {
+  background-color: #99FFCC;
+  justify-content: flex-start;
+  @media (min-width: $desktop-brk) {
+    justify-content: center;
+  }
+  }
 }
 
 .centered {
 @media (min-width: $desktop-brk) {
   margin-left: 15vw;
   margin-right: 15vw;
-}
-}
-//Grid system theme colors
-
-.grid__col--12.theme__colors {
-  background-color: $hover-color;
-  @include grid-spc;
-}
-
-.grid__col--6.theme__colors {
-  background-color: #00bfff;
-  @include grid-spc;
-}
-
-.grid__col--4.theme__colors {
-  background-color: #add8e6;
-  @include grid-spc;
-}
-
-.grid__col--3.theme__colors {
-  background-color: lavender;
-  @include grid-spc;
-}
-
-.grid__col--5.theme__colors {
-  background-color: green;
-  @include grid-spc;
-}
-
-.grid__col--7.theme__colors {
-  background-color: red;
-  @include grid-spc;
-}
-
-.grid__col--8.theme__colors {
-  background-color: orange;
-  @include grid-spc;
 }
 
 // targets all elements with classes that begin with grid__col
@@ -182,4 +220,5 @@
       margin-left: 10px;
     }
   }
+}
 }

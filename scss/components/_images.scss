@@ -1,18 +1,19 @@
 
 .img--logo {
-
+  @media (min-width: $desktop-brk) {
+  padding-left: 5vw;
+  }
 }
 
 .img--avatar {
-  width: 50%;
-  height: 50%;
   @include center;
 }
 
 .img--frame {
-  width: 80%;
-  height: 80%;
   padding: 15px;
   border: 1px black solid;
   @include center;
+  width: 80%;
+  height: 80%;
+  max-width: 300px;
 }

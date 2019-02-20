@@ -7,18 +7,17 @@
 }
 
 .form__label--hidden {
-  width: 100%;
+  display: none;
+  width: 80%;
   margin-top: 20px;
 }
 
 .form__input {
-  width: 100%;
+  padding-left: 5px;
+  width: 85%;
   border-left-width: 0px;
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom: 5px $hover-color solid;
-}
-
-input::placeholder {
-  opacity: 0;
+  font-size: 13px;
 }
