@@ -1,13 +1,4 @@
 
-ul {
-  list-style-type: none;
-  padding-left: 0px;
-  @media (min-width: $desktop-brk) {
-    display: flex;
-    margin-right: 10vw;
-  }
-}
-
 .nav__item {
   @include nav-pad;
   text-align: center;
@@ -21,7 +12,7 @@ ul {
   background-color: white;
   color: black;
   transition: background-color .5s;
-  @media (min-width: $desktop-brk) {
+  @include dsk-top {
     padding-left: 1vw;
     padding-right: 1vw;
   }

@@ -1,36 +1,36 @@
 //button theme colors
 .btn--default.theme__colors {
-  background-color: #bfefff;
+  background-color: $default-color;
   @include button;
-  @media (min-width: $desktop-brk) {
+  @include dsk-top {
     margin-left: 1vw;
     margin-right: 1vw;
   }
 }
 
 .btn--success.theme__colors {
-  background-color: green;
+  background-color: $success-color;
   @include button;
-  @media (min-width: $desktop-brk) {
+  @include dsk-top {
     margin-left: 1vw;
     margin-right: 1vw;
   }
 }
 
 .btn--error.theme__colors {
-  background-color: red;
+  background-color: $error-color;
   @include button;
   @include button-mrgn;
 }
 
 .btn--warning.theme__colors {
-  background-color: orange;
+  background-color: $warning-color;
   @include button;
   @include button-mrgn;
 }
 
 .btn--info.theme__colors {
-  background-color: purple;
+  background-color: $info-color;
   @include button;
   @include button-mrgn;
 }

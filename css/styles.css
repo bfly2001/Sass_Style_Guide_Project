@@ -1,23 +1,10 @@
-.theme__colors--#99FFCC {
-  content: #99FFCC; }
-
-.theme__colors--#3399CC {
-  content: #3399CC; }
-
-.theme__colors--#66CCFF {
-  content: #66CCFF; }
-
-.theme__colors--#CC99CC {
-  content: #CC99CC; }
-
-.theme__colors--#66CC99 {
-  content: #66CC99; }
-
-.theme__colors--#FF9999 {
-  content: #FF9999; }
-
-.theme__colors--#FF9966 {
-  content: #FF9966; }
+ul {
+  list-style-type: none;
+  padding-left: 0px; }
+  @media (min-width: 768px) {
+    ul {
+      display: flex;
+      margin-right: 10vw; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -814,14 +801,6 @@ template {
   width: 80%;
   height: 80%;
   max-width: 300px; }
-
-ul {
-  list-style-type: none;
-  padding-left: 0px; }
-  @media (min-width: 768px) {
-    ul {
-      display: flex;
-      margin-right: 10vw; } }
 
 .nav__item {
   padding-top: 10px;

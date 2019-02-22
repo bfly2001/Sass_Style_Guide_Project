@@ -1,24 +1,20 @@
 //color variables
 $hover-color: #7fffd4;
+$col3-color: #CC99CC;
+$col4-color: #66CCFF;
+$col5-color: #66CC99;
+$col6-color: #3399CC;
+$col7-color: #FF9999;
+$col8-color: #FF9966;
+$col12-color: #99FFCC;
 
+$default-color: #33CCFF;
+$success-color: #66CC66;
+$error-color: #CC6666;
+$warning-color: #FF6633;
+$info-color: #9966CC;
 //font variables
 $font-stack: 'Helvetica Neue';
 
 //breakpoint variables
 $desktop-brk: 768px;
-
-//Theme colors
-$themes: (
-'grid__col--12': #99FFCC,
-'grid__col--6': #3399CC,
-'grid__col--4': #66CCFF,
-'grid__col--3': #CC99CC,
-'grid__col--5': #66CC99,
-'grid__col--7': #FF9999,
-'grid__col--8': #FF9966);
-
-@each $color, $value in $themes {
-  .theme__colors--#{$value} {
-    content: $value;
-  }
-}

@@ -1,6 +1,6 @@
 
 .img--logo {
-  @media (min-width: $desktop-brk) {
+  @include dsk-top {
   padding-left: 5vw;
   }
 }
