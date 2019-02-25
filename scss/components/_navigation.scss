@@ -1,25 +1,32 @@
 
 .nav__item {
-  @include nav-pad;
+  //@include nav-pad;
+  @extend %nav-pad;
   text-align: center;
 }
 
 .nav__item a {
-  @include nav-pad;
+  //@include nav-pad;
+  @extend %nav-pad;
   padding-left: 35vw;
   padding-right: 35vw;
   text-decoration: none;
   background-color: white;
   color: black;
   transition: background-color .5s;
+  &:hover {
+    background-color: $hover-color;
+    color: white;
+    border-radius: 5px;
+  }
   @include dsk-top {
     padding-left: 1vw;
     padding-right: 1vw;
   }
 }
 
-.nav__item a:hover {
-  background-color: $hover-color;
-  color: white;
-  border-radius: 5px;
-}
+//.nav__item a:hover {
+  //background-color: $hover-color;
+  //color: white;
+  //border-radius: 5px;
+//}

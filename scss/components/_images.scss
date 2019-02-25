@@ -6,13 +6,14 @@
 }
 
 .img--avatar {
-  @include center;
+  @extend %center;
 }
 
 .img--frame {
   padding: 15px;
   border: 1px black solid;
-  @include center;
+  @extend %center;
+  //@include center;
   width: 80%;
   height: 80%;
   max-width: 300px;

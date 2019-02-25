@@ -18,10 +18,10 @@
   }
 }
 
-@mixin center {
-  margin-right: auto;
-  margin-left: auto;
-}
+//@mixin center {
+  //margin-right: auto;
+  //margin-left: auto;
+//}
 
 @mixin grid-spc {
   padding-top: 10px;
@@ -30,10 +30,10 @@
   margin-right: 5px;
 }
 
-@mixin nav-pad {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+//@mixin nav-pad {
+//  padding-top: 10px;
+  //padding-bottom: 10px;
+//}
 
 @mixin dsk-top (min-width: $desktop-brk) {
   @content;
