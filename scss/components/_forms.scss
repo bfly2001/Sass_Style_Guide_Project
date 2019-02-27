@@ -2,7 +2,7 @@
 .form {
   justify-content: center;
   align-items: center;
-  display: flex;
+  @include flexbox;
   flex-wrap: wrap;
 }
 

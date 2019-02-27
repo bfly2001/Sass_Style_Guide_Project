@@ -1,3 +1,11 @@
+@mixin flexbox {
+  display: flex;
+}
+
+@mixin justify-content {
+  justify-content: center;
+}
+
 @mixin button {
   color: white;
   width: 100%;
@@ -18,22 +26,12 @@
   }
 }
 
-//@mixin center {
-  //margin-right: auto;
-  //margin-left: auto;
-//}
-
 @mixin grid-spc {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
 }
-
-//@mixin nav-pad {
-//  padding-top: 10px;
-  //padding-bottom: 10px;
-//}
 
 @mixin dsk-top (min-width: $desktop-brk) {
   @content;
