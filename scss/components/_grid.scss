@@ -84,7 +84,7 @@
 
   &.theme__colors {
     background-color: $col3-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -101,7 +101,7 @@
 
   &.theme__colors {
     background-color: $col4-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -117,7 +117,7 @@
 
   &.theme__colors {
     background-color: $col5-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -134,7 +134,7 @@
 
   &.theme__colors {
     background-color: $col6-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -151,7 +151,7 @@
 
   &.theme__colors {
     background-color: $col7-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -166,7 +166,7 @@
 
   &.theme__colors {
     background-color: $col8-color;
-    justify-content: flex-start;
+    @include flex-start;
     @include dsk-top {
       @include justify-content;
     }
@@ -187,7 +187,7 @@
 
 &.theme__colors {
   background-color: $col12-color;
-  justify-content: flex-start;
+  @include flex-start;
   @include dsk-top {
     @include justify-content;
   }

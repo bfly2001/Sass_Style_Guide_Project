@@ -2,6 +2,10 @@
   display: flex;
 }
 
+@mixin flex-start {
+  justify-content: flex-start;
+}
+
 @mixin justify-content {
   justify-content: center;
 }
